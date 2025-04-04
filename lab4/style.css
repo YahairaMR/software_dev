@@ -42,6 +42,6 @@
 img{width: 100%;}
 figure img{width: 200px;}
 figcaption{margin-bottom:50px;}
-.blur1{filter: blur git (1px);}
+.blur1{filter: blur (1px);}
 .blur2{filter: blur (5px);}
 .blur3{filter: blur (10px);}
