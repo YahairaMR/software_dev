@@ -34,7 +34,7 @@
     width:200px;
     height:20px;
 }
-.blossom1{border-radius:50px;}
+.blossom1{border-radius: 50px;}
 .blossom2{border-radius: 50px;}
 .blossom3{border-radius: 15px; border: solid hotpink; padding:20px;}
 .blossom4{box-shadow: 0px opx 5px 3px gray; border-radius:10px;}
@@ -42,6 +42,6 @@
 img{width: 100%;}
 figure img{width: 200px;}
 figcaption{margin-bottom:50px;}
-.blur1{filter: blur (1px);}
+.blur1{filter: blur git (1px);}
 .blur2{filter: blur (5px);}
 .blur3{filter: blur (10px);}
