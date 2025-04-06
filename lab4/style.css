@@ -24,27 +24,58 @@
     margin: 30px;
     padding: 20px;
 }
-.radiusbox1{border-radius: 20px;}
-.radiusbox2{border-radius: 100px / 50px;}
-.radiusbox3{border-radius: 30px 10px 50px 20px;}
-.radiusbox4{border-radius: 10px 50px;}
-.radiusbox5{border-radius: 50%}
+.radiusbox1{
+    border-radius: 20px;
+}
+.radiusbox2{
+    border-radius: 100px / 50px;
+}
+.radiusbox3{
+    border-radius: 30px 10px 50px 20px;
+}
+.radiusbox4{
+    border-radius: 10px 50px;
+}
+.radiusbox5{
+    border-radius: 50%
+}
 
 .blossomimg{
     width:200px;
     margin:20px;
 }
-.blossom1{border-radius: 50px;}
-.blossom2{border-radius: 50%;}
-.blossom3{border-radius: 15px; border: solid hotpink 5px; padding: 20px;}
-.blossom4{box-shadow: 0px 0px 5px 3px gray; border-radius: 10px;}
+.blossom1{
+    border-radius: 50px;
+}
+.blossom2{
+    border-radius: 50%;
+}
+.blossom3{
+    border-radius: 15px; border: solid hotpink 5px; padding: 20px;
+}
+.blossom4{
+    box-shadow: 0px 0px 5px 3px gray; border-radius: 10px;
+}
 
-img{width: 100%;}
-figure img{width: 200px;}
-figcaption{margin-bottom: 50px;}
-.blur1{filter: blur(1px);}
-.blur2{filter: blur(5px);}
-.blur3{filter: blur(10px);}
+img{
+    width: 100%;
+    display: block;
+}
+figure img{
+    width: 200px;
+}
+figcaption{
+    margin-bottom: 50px;
+}
+.blur1{
+    filter: blur(1px);
+}
+.blur2{
+    filter: blur(5px);
+}
+.blur3{
+    filter: blur(10px);
+}
 
 /* static and liquid layouts */
 .maincontainer{
@@ -171,12 +202,12 @@ html{scroll-behavior: smooth;}/* smooth transtion to the space */
     padding: 20px;
 }
 .navbarhorizontal a:hover{
-    background-color: brown;
+    background-color: black;
     font-weight: bolder;
     text-decoration: underline;
 }
 
-/* Colors */
+/* Colors */ /* Mac only allows to see two gradient box */
 .rgbcontainer, .hexcontainer{
     border: solid grey 1px;
     display: flex;
@@ -219,9 +250,10 @@ html{scroll-behavior: smooth;}/* smooth transtion to the space */
     left: 100px;
 }
 .imgtitle{
-    background-color: rgba(110, 28, 62, 0.279);
+    background-color: rgba(190, 20, 150, 0.7);
     position: absolute;
     top: 90px;
+    bottom: 90px;
     left: 20px;
     right: 20px;
     padding: 2%;
@@ -234,8 +266,8 @@ html{scroll-behavior: smooth;}/* smooth transtion to the space */
     width: 100%;
 }
 
-/*Background image */
-.imgbackground, .imgbackground2 {
+/*Background image */ /*mac only allow 2 gradient boxes */
+.imgbackground, .imgbackground2{
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
@@ -246,16 +278,16 @@ html{scroll-behavior: smooth;}/* smooth transtion to the space */
     border: solid gray 1px;
 }
 .imgbackground div:nth-child(1){
-    background-image: linear-gradient (red darkblue);
+    background-image: linear-gradient(red, darkblue); /* linear-gradient(color)no space */
 }
 .imgbackground div:nth-child(2){
-    background-image: linear-gradient (to left, red, darkblue);
+    background-image: linear-gradient(to left, red, darkblue);
 }
 .imgbackground div:nth-child(3){
-    background-image:linear-gradient (to bottom left, red, darkblue) ;
+    background-image: linear-gradient(to bottom left, red, darkblue) ;
 }
 .imgbackground2 div:nth-child(1){
-    background-image: linear-gradient (to top right, red, darkblue, yellow);
+    background-image: linear-gradient(to top right, red, darkblue, yellow);
 }
 .imgbackground2 div:nth-child(2){
     background-image: linear-gradient(red, darkblue, yellow, purple);
@@ -270,15 +302,15 @@ html{scroll-behavior: smooth;}/* smooth transtion to the space */
     height: 500px;
     margin: auto;
     border: solid gray 1px;
-    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(0, 0, 210, 0.3 )), url(images/blossom.jpg);
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(0, 0, 140, 0.5)), url(images/blossom.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
 }
 .herocontent{
-    background-color: rgb(50, 50, 50, 0, 0.8);
+    background-color: rgba(50, 50, 50, 0.8);
     position: absolute;
-    bottom: 5%;
+    top: 30%;
     left: 10%;
     right: 10%;
     color: white;
@@ -298,13 +330,27 @@ html{scroll-behavior: smooth;}/* smooth transtion to the space */
 }
 .herocontent_link{
     background-color: rgba(0, 0, 140, 0.6);
-    color:white;
-    display:block;
-    padding: 1rem;
+    color: white;
+    display: block;
+    padding: 1rem; /*one paragraph 16px */
     text-decoration: none;
 }
 .herocontent_link:hover{
     background-color: rgba(220, 220, 200, 0.9);
-    color:crimson;
+    color: crimson;
     font-weight: bolder;
+}
+
+/* LAB EXERCISE */
+.exercisecontainer{
+    height: 500px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.img1, .img2, .img3{
+    width: 30%;
+    height: 500px;
+    border: solid gray 1px;
 }
