@@ -143,13 +143,11 @@ img{width: 100%; display: block;}
 @media only screen and (max-width: 1150px){
     .flexcontainer{background-color: aqua;} /* only the elements and the properties that you already have */
     .cardslide {width:500px;}
-    .gridcontainer{
-    grid-template-columns: 3fr 2fr;
-    }
+    .gridcontainer{grid-template-columns: 3fr 2fr;}
 }
 @media only screen and (max-width: 800px){
-    .flexcontainer{background-color: purple}
-    .cardslide{width: 90%; margin: 5%}
+    .flexcontainer{background-color: purple;}
+    .cardslide{width: 90%; margin: 5%;}
     .gridcontainer{grid-template-columns: 1fr;}
     .collapsenavbars{display: inline-block;}  /*I want to appear */
     .navbars{display: none;}  /* dissapear */
